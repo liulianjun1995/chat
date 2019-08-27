@@ -1,0 +1,35 @@
+[v-cloak] {
+    display:none;
+
+}
+.el-container {
+    height: 100%;
+}
+
+.el-container:nth-child(5) .el-aside,
+.el-container:nth-child(6) .el-aside {
+    line-height: 260px;
+}
+
+.el-container:nth-child(7) .el-aside {
+    line-height: 320px;
+}
+.el-header, .el-footer {
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+}
+.el-header{
+    font-size: 12px;
+    padding: 0 0 !important;
+}
+.el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+}
+
+.el-menu-item,.el-submenu__title:hover{
+    border-bottom-color: #409EFF !important;
+}

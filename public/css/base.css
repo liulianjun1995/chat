@@ -1,0 +1,427 @@
+@charset "utf-8";
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cf, .grid {
+    *zoom: 1
+}
+
+.cf:before, .grid:before, .cf:after, .grid:after {
+    content: "";
+    display: table
+}
+
+.cf:after, .grid:after {
+    clear: both
+}
+
+html {
+    color: #666;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: "微软雅黑", Verdana, Arial, Lucida, Helvetica, "\5B8B\4F53", "\5FAE\8F6F\96C5\9ED1", sans-serif !important;
+}
+
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, pre, code, form, fieldset, legend, input, textarea, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, group, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+body, button, input, select, textarea {
+    outline: none;
+    font: 12px/1.5 Microsoft YaHei
+}
+
+body {
+    font-size: 75%;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    font-size: Verdana, Arial, Lucida, Helvetica, "\5B8B\4F53", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+}
+
+input, select, textarea {
+    vertical-align: middle;
+    /*color: #FFFFFF*/
+}
+
+button, input {
+    *overflow: visible;
+    line-height: normal
+}
+
+::-webkit-input-placeholder {
+    color: #666
+}
+
+:-moz-placeholder {
+    color: #666
+}
+
+::-moz-placeholder {
+    color: #666
+}
+
+:-ms-input-placeholder {
+    color: #666
+}
+
+button {
+    cursor: pointer
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+th {
+    text-align: inherit
+}
+
+fieldset, img {
+    border: 0
+}
+
+iframe {
+    display: block
+}
+
+blockquote {
+    margin: 1em 4em 1em 2em;
+    padding: .6em 1em;
+    background: #f1f1f1
+}
+
+blockquote blockquote {
+    padding: 0 0 0 1em;
+    margin-left: 2em;
+    border-left: .4em solid #ddd
+}
+
+acronym, abbr {
+    border-bottom: 1px dotted;
+    font-variant: normal
+}
+
+abbr {
+    cursor: help
+}
+
+del {
+    text-decoration: line-through
+}
+
+address, caption, cite, code, den, em, th, var {
+    font-style: normal;
+    font-weight: 500
+}
+
+ul, ol {
+    list-style: none
+}
+
+caption, th {
+    text-align: left
+}
+
+q:before, q:after {
+    content: ''
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+a {
+    color: #666
+}
+
+a:hover {
+    text-decoration: none
+}
+
+ins, a {
+    text-decoration: none
+}
+
+small {
+    font-size: 12px;
+    color: #666
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.c {
+    text-align: center
+}
+
+.l {
+    text-align: left
+}
+
+.r {
+    text-align: right
+}
+
+.red {
+    color: #e4312a !important
+}
+
+.orange {
+    color: #fa7d08 !important
+}
+
+.yellow {
+    color: #ffc40d !important
+}
+
+.green {
+    color: #54b154 !important
+}
+
+.blue {
+    color: #0788e5 !important
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 12px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: bold
+}
+
+.h1 {
+    font-size: 24px
+}
+
+.h2 {
+    font-size: 18px
+}
+
+.h3 {
+    font-size: 14px
+}
+
+.h4, .h5, .h6 {
+    font-size: 12px
+}
+
+.bort {
+    border-top: 1px solid #d9d9d9;
+}
+
+.bord {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.borr {
+    border-right: 1px solid #ccc;
+}
+
+.borl {
+    border-left: 1px solid #ccc;
+}
+
+.bort0 {
+    border-top: 0 !important;
+}
+
+.bord0 {
+    border-bottom: 0 !important;
+}
+
+.borr0 {
+    border-right: 0 !important;
+}
+
+.borl0 {
+    border-left: 0 !important;
+}
+
+.mb10 {
+    margin-bottom: 10px !important
+}
+
+.mb20 {
+    margin-bottom: 20px !important
+}
+
+.mb30 {
+    margin-bottom: 30px !important
+}
+
+.mb40 {
+    margin-bottom: 40px !important
+}
+
+.mb50 {
+    margin-bottom: 50px !important
+}
+
+.mb60 {
+    margin-bottom: 60px !important
+}
+
+.mb15 {
+    margin-bottom: 15px !important
+}
+
+.pt0 {
+    padding-top: 0 !important;
+}
+
+.pt5 {
+    padding-top: 5px !important
+}
+
+.pt10 {
+    padding-top: 10px !important
+}
+
+.pt20 {
+    padding-top: 20px !important
+}
+
+.pt30 {
+    padding-top: 30px !important
+}
+
+.pt40 {
+    padding-top: 40px !important
+}
+
+.pt50 {
+    padding-top: 50px !important
+}
+
+.pt60 {
+    padding-top: 50px !important
+}
+
+.gird {
+    width: 1075px;
+    margin: 0 auto;
+}
+
+.gird-2 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.bg-fff {
+    background: #fff !important;
+}
+
+.bg-f5 {
+    background: #f5f5f5 !important;
+}
+
+.bg-none {
+    background: none !important;
+}
+
+.ty-b {
+    -webkit-box-shadow: 0 5px 10px #ccc;
+    -moz-box-shadow: 0 5px 10px #ccc;
+    box-shadow: 0 5px 10px #ccc;
+}
+
+.ty-t {
+    -webkit-box-shadow: 0 5px 10px #ccc;
+    -moz-box-shadow: 0 5px 10px #ccc;
+    box-shadow: 0 -6px 10px #ccc;
+}
+
+.box-btn:hover {
+    color: #fff !important;
+    background: #65a6ff !important;
+    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+    transition: all 0.2s ease-in-out;
+}
+
+.cle:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+/*::-webkit-scrollbar {
+height: 7px;
+width: 7px;
+}
+::-webkit-scrollbar-thumb {
+border-radius: 4px;
+background: rgba(0,0,0,0.4);
+}
+*/
+:focus {
+    outline: none
+}
+
+.btn:active {
+    box-shadow: 0 0 2px 3px rgba(89, 98, 255, .25);
+    opacity: .9;
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+    box-shadow: 0 0 2px 1px rgba(89, 98, 255, .15);
+}

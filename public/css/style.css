@@ -1,0 +1,269 @@
+#app{
+    height: calc(100% - 55px);
+}
+canvas {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.login-box{
+    width: 400px;
+    height: 500px;
+    padding: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    margin-left: -200px;
+    margin-top: -250px;
+}
+.login-box h3{
+    text-align: center;
+    height: 20px;
+    font: 20px "microsoft yahei",Helvetica,Tahoma,Arial,"Microsoft jhengHei",sans-serif;
+    color: #fff ;
+    line-height: 20px;
+    padding: 0 0 35px 0;
+}
+.login-box .el-form-item__error{
+    margin-left: 30px;
+}
+.login-box .input-outer{
+    border-radius: 50px;
+    position: relative;
+    border: rgba(255,255,255,0.2) 2px solid !important;
+}
+.login-box .input-outer .user{
+    width: 25px;
+    height: 25px;
+    background: url(../storage/img/login_ico.png);
+    background-position: -125px 0;
+    position: absolute;
+    margin: 10px 13px;
+}
+.login-box .input-outer .password{
+    width: 25px;
+    height: 25px;
+    background-image: url(../storage/img/login_ico.png);
+    background-position: -125px -34px;
+    position: absolute;
+    margin: 10px 13px;
+}
+.login-box .input-outer input{
+    width: 100%;
+    height: 46px;
+    outline: none;
+    display: inline-block;
+    font: 14px "microsoft yahei",Helvetica,Tahoma,Arial,"Microsoft jhengHei";
+    margin-left: 30px;
+    border: none;
+    background: none;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+.login-box .input-outer input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+
+.vaptcha-init-main {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+}
+​
+.vaptcha-init-loading {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+​
+.vaptcha-init-loading>a {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: none;
+}
+​
+.vaptcha-init-loading>a img {
+    vertical-align: middle
+}
+​
+.vaptcha-init-loading .vaptcha-text {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #CCCCCC;
+    vertical-align: middle
+}
+
+
+#main{
+    height: 100%;
+}
+.login-icon{
+    padding: 4px;
+    display: inline-block;
+}
+
+#find{
+    padding: 20px;
+}
+
+.find-main .el-tabs__nav-wrap::after{
+    background-color: unset;
+}
+
+.find-main .el-tabs__nav{
+    float: unset;
+    text-align: center;
+}
+
+.find-main .el-tabs__active-bar{
+    display: none;
+}
+
+.find-main .find-view{
+    margin-bottom: 20px;
+}
+.find-main .item-list{
+    width: 80%;
+    margin: 0 auto;
+    height: 320px;
+    overflow:auto;
+}
+
+.find-main .item-list .item{
+    width: 32%;
+    height: 100px;
+    float: left;
+    margin-right: 5px;
+    padding: 0 10px;
+}
+
+.find-main .item-list .item .img{
+    margin: 20px 20px;
+    float: left;
+}
+
+.find-main .item-list .item .description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.find-main .item-list .item .img img{
+    border-radius: 45px;
+    width: 60px;
+    height: 60px;
+}
+
+.find-main .item-list .item .msg{
+    margin: 20px 0;
+    float: left;
+}
+.find-main .item-list .item .username{
+    width: 120px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-break:keep-all;
+}
+
+.find-main .item-list .item .position{
+    margin: 3px 0;
+}
+
+
+.layim-msgbox{margin: 15px;}
+.layim-msgbox li{position: relative; margin-bottom: 10px; padding: 0 130px 10px 60px; padding-bottom: 10px; line-height: 22px; border-bottom: 1px dotted #e2e2e2;}
+.layim-msgbox .layim-msgbox-tips{margin: 0; padding: 10px 0; border: none; text-align: center; color: #999;}
+.layim-msgbox .layim-msgbox-system{padding: 0 0 10px 10px;}
+.layim-msgbox li p span{padding-left: 5px; color: #999;}
+.layim-msgbox li p em{font-style: normal; color: #FF5722;}
+
+.layim-msgbox-avatar{position: absolute; left: 0; top: 0; width: 50px; height: 50px;}
+.layim-msgbox-user{padding-top: 5px;}
+.layim-msgbox-content{margin-top: 3px;}
+.layim-msgbox .layui-btn-small{padding: 0 15px; margin-left: 5px;}
+.layim-msgbox-btn{position: absolute; right: 0; top: 12px; color: #999;}
+
+.layim-msgbox .fly-link{
+    color: #01AAED;
+}
+
+.layim-msgbox .fly-link:hover{
+    color: #5FB878;
+    transition: all .3s;
+}
+
+#info{
+    height: 100%;
+    padding: 15px 40px;
+}
+#group{
+    height: 100%;
+    padding: 15px 40px;
+}
+#group .type{
+    padding: 10px 5px;
+}
+#group .type .box{
+    border-radius: 4px;
+    border: 1px solid #DCDFE6;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#group .type .box:hover{
+    background-color: #e4e4e4;
+}
+#group .type .item{
+    padding: 30px 20px;
+    width: 100%;
+    height: 120px;
+    float: left;
+}
+
+#group .type .item-2{
+    width: 100%;
+    padding: 15px;
+}
+
+#group .type .item-2 img{
+    border-radius: 45px;
+    width: 45px;
+    height: 45px;
+}
+#group .type .item-2 .msg{
+    margin-top: 5px;
+}
+
+#group .type .item .img{
+    float: left;
+}
+
+#group .type .item .img img{
+    margin-top: 10px;
+    border-radius: 45px;
+    width: 45px;
+    height: 45px;
+}
+
+#group .type .item .msg{
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+
+#group .info{
+    padding: 10px 36px;
+}
+
+#group .member{
+    padding: 10px;
+}
+
